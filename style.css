@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    background-color: black;
+    font-family: "Anton";
+}
+.main{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+h1{
+    color: white;
+}
