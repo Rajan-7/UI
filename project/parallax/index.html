@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "jost";
+      }
+      h2 {
+        font-size: 64px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: 2px 2px 5px #000;
+      }
+      p {
+        font-size: 30px;
+        color: #fff;
+      }
+      section {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("../../images/parallax.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .section-2 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("../../images/pirateking.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .section-3 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("../../images/son-goku.jpeg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+       
+      }
+      .section-4 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("../../images/naruto-uzumaki.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <h2>Parallax</h2>
+        <p>Welcome to parallax</p>
+      </div>
+    </section>
+    <section class="section-2">
+      <div>
+        <h2>Luffy</h2>
+        <p>Monkey D. Luffy</p>
+      </div>
+    </section>
+    <section class="section-3">
+      <div>
+        <h2>Goku</h2>
+        <p>Son Goku</p>
+      </div>
+    </section>
+    <section class="section-4">
+      <div>
+        <h2>Naruto</h2>
+        <p>Naruto Uzumaki</p>
+      </div>
+    </section>
+  </body>
+</html>
