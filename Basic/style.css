@@ -1,0 +1,55 @@
+/* Selector */
+/* 1. Elements : name
+   2. Class selector : dot
+   3. Id selector : hash
+   4. Pseudo class -> :
+   5. HSL:color
+ */
+h1:hover {
+  color: black;
+}
+h1 {
+    /* color:transparent; */
+  color: hsl(0, 100%, 50%);
+}
+.para {
+    color: #445D48;
+  /* color: green; */
+  /* color: rgba(0, 0, 255, 0.5); */
+}
+#btn {
+  background-color: black;
+  color: #fff;
+}
+#btn:hover {
+    color: #fff;
+  /* background-color: rgb(8, 0, 255); */
+}
+
+/* COlOR BONUS
+    1. Hue: purest color
+    2. Tint: A pure color with white added(right-left)
+    3. Shade: A pure color with black added (top-down)
+    4. Tone : A pure color with grey added (diagonally)
+ */
+
+ /* BACKGROUND COLOR✅
+    1. Background-color
+    2. Background-position
+    3. Background-image
+    4. Background-size
+    5. Background-repeat
+    6. Background-attachment
+
+  */
+  body{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+    background-image: url('../images/luffy.jpeg');
+    /* ,url('../images/goku.jpeg') */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-position: top right; */
+    background-blend-mode: normal;
+  }
