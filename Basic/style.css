@@ -1,30 +1,35 @@
-/* Selector */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100&family=Rubik:wght@400;500;700&family=Urbanist&display=swap");
+@font-face {
+  font-family: "rjfont";
+  src: url("../fonts/Hello Januari.ttf") format(truetype);
+}
+/* Selector ✅*/
 /* 1. Elements : name
    2. Class selector : dot
    3. Id selector : hash
    4. Pseudo class -> :
    5. HSL:color
  */
-h1:hover {
+/* h1:hover {
   color: black;
 }
 h1 {
-    /* color:transparent; */
+  color: transparent;
   color: hsl(0, 100%, 50%);
 }
 .para {
-    color: #445D48;
-  /* color: green; */
-  /* color: rgba(0, 0, 255, 0.5); */
+  color: #445d48;
+  color: green;
+  color: rgba(0, 0, 255, 0.5);
 }
 #btn {
   background-color: black;
   color: #fff;
 }
 #btn:hover {
-    color: #fff;
-  /* background-color: rgb(8, 0, 255); */
-}
+  color: #fff;
+  background-color: rgb(8, 0, 255);
+} */
 
 /* COlOR BONUS
     1. Hue: purest color
@@ -33,7 +38,7 @@ h1 {
     4. Tone : A pure color with grey added (diagonally)
  */
 
- /* BACKGROUND COLOR✅
+/* BACKGROUND COLOR✅
     1. Background-color
     2. Background-position
     3. Background-image
@@ -42,14 +47,106 @@ h1 {
     6. Background-attachment
 
   */
-  body{
+/* body{
     width: 100vw;
     height: 100vh;
     background-color: hsl(0, 0%, 94%);
     background-image: url('../images/luffy.jpeg');
     /* ,url('../images/goku.jpeg') */
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    /* background-position: top right; */
-    background-blend-mode: normal;
-  }
+/* background-repeat: no-repeat; */
+/* background-size: 100% 100%; */
+/* background-position: top right; */
+/* background-blend-mode: normal; */
+/* } */
+
+/* Units in CSS✅
+     1. Absolute 
+        a. pixels
+     2. Relative
+        a. percentage
+        b. em : 1 em = 16px (run as per the parent element )
+        c. rem : 1 rem = 10px (apply as per the root element html)
+   */
+
+/* h1{
+    font-size: 3.375em;
+    font-size: 54px;
+    color: green;
+   } */
+
+/* html{
+    font-size: 62.5%;
+   }
+
+   h1{
+    font-size: 5.4rem;
+   }
+   p{
+    font-size: 2.4rem ;
+   }
+   a{
+    font-size: 1.4rem;
+   } */
+
+/* FONT FAMILY in CSS✅
+      1.Font-size 
+      2.Font-weight
+      3.Font-family
+      4.Font-style
+      5.Font-variant
+    */
+body {
+  display: grid;
+  place-items: center;
+  background-color:hsl(0, 0%, 94%);
+}
+.container {
+  width: 50%;
+}
+/* h1 {
+  font-family: 'rjfont',"Urbanist", sans-serif;
+  font-style: italic;
+  font-variant: small-caps;
+}
+p {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-variant: small-caps;
+}
+a{
+  font-family: 'Urbanist', sans-serif;
+  font-style: italic;
+} */
+
+/* Text properties in CSS✅
+   1. text-alignment
+   2. text-decoration
+   3. text-transform
+   4. text-spacing
+   5. text-shadow : offset-x offset-y blur-radius color
+ */
+ h1{
+  font-size: 54px;
+  text-align: left;
+  text-decoration-line:none ;
+  text-decoration-color: rgb(233, 6, 6);
+  text-decoration-thickness: 10px;
+  text-decoration-style: none;
+  text-transform: capitalize;
+  text-shadow: 5px 5px 10px rgb(232, 9, 9);
+ }
+ a,p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 1.2px;
+  line-height: 1.5;
+ }
+ a{
+  text-decoration: none;
+  color: red;
+ }
+ p::first-letter{
+    text-transform: uppercase;
+    font-size: 54px;
+ }
