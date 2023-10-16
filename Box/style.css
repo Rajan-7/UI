@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100&family=Rubik:wght@400;500;700&family=Urbanist&display=swap");
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: "Urbanist";
+  height: 100vh;
   display: grid;
-  /* place-items: center; */
-  background-color: hsl(0, 0%, 94%);
+  place-items: center;
+  font-family: "Urbanist";
+  /* background-color: hsl(0, 77%, 5%); */
 }
 /* .container {
   width: 50%;
@@ -53,13 +54,12 @@ body {
   padding: 15px 150px;
 } */
 
-
 /* Margin in css✅
      space between elements
      syntax:top right bottom left
      It works with negative value
     */
- /* h1{
+/* h1{
   text-align: center;
  }
   .container{
@@ -69,13 +69,38 @@ body {
     margin: auto;
     margin-bottom: 10px;
   } */
-  /* .s-2{
+/* .s-2{
     padding: 50px;
     width: 1200px;
     background-color: rgb(70, 67, 238);
     margin: auto;
   } */
 
-  /* Height:500+50+50+10+10 */
+/* Height:500+50+50+10+10 */
 
+/* Box Shadow ✅
+    syntax: offset-x offset-y blur-radius density/spread color;
+   */
+/* div {
+  height: 300px;
+  width: 300px;
+  background-color: aqua;
+  border-radius: 50%;
+  box-shadow: 0px 0px 40px 40px #ffb000;
+} */
 
+/* Drop shadow ✅
+   Filter ✅
+   1.greyscale()
+   2.opacity()
+   3.contrast()
+   4.blur()
+   5.saturate()
+   6.invert()
+
+   syntax: offset-x offset-y blur-radius  color;
+    */
+    img{
+      filter: grayscale();
+      /* filter: drop-shadow(0 0 20px #fff); */
+    }

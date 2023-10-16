@@ -1,7 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100&family=Rubik:wght@400;500;700&family=Urbanist&display=swap");
+
 @font-face {
   font-family: "rjfont";
   src: url("../fonts/Hello Januari.ttf") format(truetype);
+}
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Urbanist";
+  background-color: hwb(0 99% 1%);
+}
+
+.container{
+  width:50%;
 }
 /* Selector ✅*/
 /* 1. Elements : name
@@ -95,14 +115,14 @@ h1 {
       4.Font-style
       5.Font-variant
     */
-body {
+/* body {
   display: grid;
   place-items: center;
-  background-color:hsl(0, 0%, 94%);
+  background-color: hsl(0, 0%, 94%);
 }
 .container {
   width: 50%;
-}
+} */
 /* h1 {
   font-family: 'rjfont',"Urbanist", sans-serif;
   font-style: italic;
@@ -126,27 +146,108 @@ a{
    4. text-spacing
    5. text-shadow : offset-x offset-y blur-radius color
  */
- h1{
+/* h1 {
   font-size: 54px;
   text-align: left;
-  text-decoration-line:none ;
+  text-decoration-line: none;
   text-decoration-color: rgb(233, 6, 6);
   text-decoration-thickness: 10px;
   text-decoration-style: none;
   text-transform: capitalize;
   text-shadow: 5px 5px 10px rgb(232, 9, 9);
- }
- a,p{
+}
+a,
+p {
   font-size: 18px;
   letter-spacing: 1px;
   word-spacing: 1.2px;
   line-height: 1.5;
- }
- a{
+}
+a {
   text-decoration: none;
   color: red;
- }
- p::first-letter{
-    text-transform: uppercase;
-    font-size: 54px;
- }
+}
+p::first-letter {
+  text-transform: uppercase;
+  font-size: 54px;
+} */
+
+/* CSS gradient✅
+   1. linear gradient
+     syntax:linear-gradient(direction,color)
+     default direction: top-bottom
+  */
+/* section {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to right top,
+    rgba(5, 25, 55, 0.6),
+    rgba(0, 77, 122, 0.6),
+    rgba(0, 135, 147, 0.6),
+    rgba(0, 191, 114, 0.6),
+    rgba(168, 235, 18, 0.6)
+  ),url('../images/pirateking.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* 2.Radial gradient 
+ syntax:linear-gradient(shape,color)
+ */
+ /* section{
+  height: 100vh;
+  width: 100%;
+  background-image: repeating-radial-gradient(red ,yellow ,green 500px);
+ } */
+
+ /* LIST style in css ✅ 
+    1.list-style-type
+    2.list-style-postion
+    3.list-style-image
+ */
+/* .list{
+  width: 400px;
+  padding: 30px;
+  background-color: aqua;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 black;
+}
+
+ul{
+  list-style-type: lower-roman;
+  list-style-position: inside;
+  
+}
+
+li{
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  border: 1px solid red;
+} */
+
+/* Anchor state✅ 
+  1.link
+  2.Hover
+  3.visited
+  4.active
+*/
+button{
+  border-style: none;
+}
+a:link{
+  margin-top: 15px;
+  color: #fff;
+  padding: 3px;
+  text-decoration: none;
+}
+a:visited{
+  color: brown;
+}
+a:hover{
+  color: blue;
+}
+a:active{
+  color: green;
+}
