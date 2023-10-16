@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100&family=Rubik:wght@400;500;700&family=Urbanist&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Urbanist";
+  display: grid;
+  /* place-items: center; */
+  background-color: hsl(0, 0%, 94%);
+}
+/* .container {
+  width: 50%;
+} */
+/* BOX model✅
+   1. content: height & width
+   2. padding
+   3. border
+   4. margin
+   Box contain four attributes : top,bottom,left & right
+ */
+
+/* Border✅
+    syntax: border style color;
+  */
+/* p {
+  border: 10px none green;
+} */
+
+/* Border Radius✅
+    syntax:value;
+   */
+/* div {
+  height: 500px;
+  width: 500px;
+  background-color: aqua;
+  border-radius: 99% 1% 100% 0% / 96% 0% 100% 4%;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+} */
+/* Padding in css : TRBL✅
+      ->space between border & content
+      syntax:top right bottom left
+    */
+/* p {
+  padding: 15px 150px;
+} */
+
+
+/* Margin in css✅
+     space between elements
+     syntax:top right bottom left
+     It works with negative value
+    */
+ /* h1{
+  text-align: center;
+ }
+  .container{
+    padding: 50px;
+    width: 400px;
+    background-color: aqua;
+    margin: auto;
+    margin-bottom: 10px;
+  } */
+  /* .s-2{
+    padding: 50px;
+    width: 1200px;
+    background-color: rgb(70, 67, 238);
+    margin: auto;
+  } */
+
+  /* Height:500+50+50+10+10 */
+
+
