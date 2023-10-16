@@ -1,0 +1,79 @@
+/* 1.Relative : Keeps the normal document flow, it doesn't give its original position i.e keeps the normal
+   document flow,it moves from its original position & takes right,left,top & bottom attributes
+
+   2.Absolute: Removes the normal document flow , whereas absolute gives its original position neglecting
+  the normal document flow,it moves its position as per the documents or parent position,default position
+  is top:0 left:0 i.e top left corner of the document or the parent
+
+  3.Static
+  4.sticky
+  5.Fixed
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  height: 300px;
+  width: 400px;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
+
+.child {
+  position: absolute;
+}
+
+.child-1 {
+  right: 0;
+  top:0;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
+.child-2 {
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(15, 220, 90);
+}
+.child-3 {
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  height: 50px;
+  width: 50px;
+  background-color: rgb(141, 9, 9);
+}
+.child-4 {
+  bottom: 0;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(25, 227, 14);
+}
+.child-5 {
+    top:0;
+    left:0;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(25, 227, 14);
+  }

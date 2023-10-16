@@ -233,7 +233,7 @@ li{
   3.visited
   4.active
 */
-button{
+/* button{
   border-style: none;
 }
 a:link{
@@ -250,4 +250,46 @@ a:hover{
 }
 a:active{
   color: green;
+} */
+
+/* Combinator ✅
+  1. Descendent  selector
+  2. Ajacent sibling
+  3. Child selector
+  4. General sibling selector
+ */
+
+ /* .container h1{
+  font-size: 40px;
+ }
+
+.container > p{
+  color: blue;
 }
+
+.container .list ul > li{
+  color: green;
+} */
+
+/* DISPLAY IN CSS✅ 
+  1. Block level : no side by side content,take full width e.g <p> ,<h1>
+  2. Inline : property like height , width cann't be used,only work for horizontal value
+  3. Inline-block : to make inline element able to use block element property
+*/
+/* p{
+  width: 300px;
+  margin:0 auto;
+  background-color: #e01b1b;
+}
+a{
+  display: block;
+  background-color: aqua;
+}
+.inline{
+  display: inline;
+} */
+
+/* POSITION IN CSS ✅
+  1. Absolute
+ */
+
