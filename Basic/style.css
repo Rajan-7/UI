@@ -21,8 +21,10 @@ body {
 }
 
 .container{
-  width:50%;
+  width:80%;
 }
+
+
 /* Selector ✅*/
 /* 1. Elements : name
    2. Class selector : dot
@@ -289,7 +291,42 @@ a{
   display: inline;
 } */
 
-/* POSITION IN CSS ✅
-  1. Absolute
+/* Overflow in css ✅
+   1.overflow:visible
+   2.overflow:hidden
+   3.overflow:auto | USE THIS
+   4.overflow:scroll
  */
 
+
+ /* .container{
+  width: 500px;
+  height: 150px;
+  border: 5px solid rgb(12, 198, 96);
+  overflow: auto;
+ } */
+
+ /*  PSEUDO ELEMENT✅
+   It uses :: double colon
+   1. ::after
+   2. ::before
+   3. ::first-line
+   4. ::first-letter
+   5. ::placeholder
+   6. ::selection
+  */
+
+  /*  PSEUDO CLASS✅
+    1. ;first-child
+    2. :last-child
+    3. :nth-child()
+    4. :first-of-type()
+   */
+
+   /* COLUMN LAYOUT ✅*/
+   p{
+    column-count: 4;
+    text-align: justify;
+    column-rule: 3px solid black;
+    column-gap: 50px;
+   }
