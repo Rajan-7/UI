@@ -1,0 +1,87 @@
+/* Flexbox ia a one-dimensional layout that helps to distribute space along a single axis  
+  either (horizontally or vertically).
+
+  ->Flex container properties
+  1.Flex container(display:flex)
+  2.Flex items
+  3.Main & cross axis
+  4.Flex direction: row-reverse,column-reverse
+  5.Justify-content(horizontally if row otherwise vertically )
+  6.Align items(vertically if row otherwise horizontally)
+  7.Flex wrap : wrap when items get overflow
+  8.Align content(only usable when flex-wrap is define)
+
+  ->Flex items properties
+  1.Order
+  2.Flex-grow
+  3.Flex-shrinks
+  4.Flex-basis
+  5.Flex
+
+  ->ALignment properties
+  1.self-align
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  background-color: hsl(0, 0%, 96%);
+}
+.flex-container {
+  height:auto;
+  width: 800px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  color: #fff;
+
+  /* flex-container properties */
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: row-reverse;
+  flex-direction: column-reverse; */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(
+    to bottom,
+    #080537,
+    #610041,
+    #9c262a,
+    #aa6c00,
+    #7fb20b
+  );
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  /* items-properties */
+ /* flex:1; */
+}
+
+/* .item-2{
+    height: 200px;
+}
+.item-3{
+    height: 200px;
+} */
