@@ -1,0 +1,66 @@
+/* Transition in css ✅
+   1. Transition property
+   2. Transition duration
+   3. Transition timing function
+   4. Transition-delay
+*/
+
+
+/* *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 96%);
+}
+.transition{
+    width:60%
+}
+a{
+    height: 20px;
+    width: 200px;
+    display: block;
+    border: 2px solid red;
+    text-decoration: none;
+    text-align: center;
+    background-color: aquamarine;
+
+    /* Transition */
+    /* transition-property: width;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+    transition-delay: 2s; */
+    transition:all .3s linear ;
+}
+
+.transition a:hover{
+    background-color: rgb(64, 0, 255);
+    width: 400px;
+    color: #fff;
+}
+
+img{
+    margin-top: 30px;
+     height: 100px;
+     transition: all 2s linear;
+}
+
+img:hover{
+    scale: 1.2;
+}
+.card{
+    margin-top: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(169, 111, 111);
+    transition: box-shadow 2s linear;
+}
+.card:hover{
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
