@@ -2,7 +2,7 @@
 /* Transform
    1. transform:translate()
    2. transform:scale()
-   3. transform:rotate()
+   3. transform:rotate() -> negative - means anticlockwise
    4. transform:skewed()
 
  */
@@ -39,7 +39,13 @@ img:hover{
     /* rotate: 90deg; */
     /* transform: skewX(20deg); */
     /* transform: skewY(20deg); */
-    rotate: 20deg;
-    transform-origin: left;
+    /* rotate: 20deg;
+    transform-origin: right; */
+
+
+    /* translate: 50px 20px; */
+    /* scale: 2; */
+    /* rotate: -45deg; */
+    transform: translateX(200px) scale(.5) rotate(45deg);
 
 }
