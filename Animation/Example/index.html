@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animario</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url("../../images/mario-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      img {
+        width: 200px;
+        position: absolute;
+        bottom: 8%;
+
+        animation: marionrun 2s linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes marionrun {
+        0% {
+          translate: 0%;
+        }
+        100% {
+          translate: calc(90vw - 200px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../../images/mario run boy.gif" alt="mario boy" />
+  </body>
+</html>
