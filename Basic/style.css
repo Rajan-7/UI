@@ -5,7 +5,6 @@
   src: url("../fonts/Hello Januari.ttf") format(truetype);
 }
 
-
 /* * {
   margin: 0;
   padding: 0;
@@ -20,10 +19,9 @@ body {
   background-color: hwb(0 99% 1%);
 }
 
-.container{
-  width:80%;
+.container {
+  width: 80%;
 }
-
 
 /* Selector ✅*/
 /* 1. Elements : name
@@ -197,13 +195,13 @@ p::first-letter {
 /* 2.Radial gradient 
  syntax:linear-gradient(shape,color)
  */
- /* section{
+/* section{
   height: 100vh;
   width: 100%;
   background-image: repeating-radial-gradient(red ,yellow ,green 500px);
  } */
 
- /* LIST style in css ✅ 
+/* LIST style in css ✅ 
     1.list-style-type
     2.list-style-postion
     3.list-style-image
@@ -261,7 +259,7 @@ a:active{
   4. General sibling selector
  */
 
- /* .container h1{
+/* .container h1{
   font-size: 40px;
  }
 
@@ -298,15 +296,14 @@ a{
    4.overflow:scroll
  */
 
-
- /* .container{
+/* .container{
   width: 500px;
   height: 150px;
   border: 5px solid rgb(12, 198, 96);
   overflow: auto;
  } */
 
- /*  PSEUDO ELEMENT✅
+/*  PSEUDO ELEMENT✅
    It uses :: double colon
    1. ::after
    2. ::before
@@ -316,49 +313,85 @@ a{
    6. ::selection
   */
 
-  /*  PSEUDO CLASS✅
+/*  PSEUDO CLASS✅
     1. :first-child
     2. :last-child
     3. :nth-child()
     4. :first-of-type()
    */
 
-   /* COLUMN LAYOUT ✅
+/* COLUMN LAYOUT ✅
    1. cloumn-count
    2. column-rule
    3.column-gap
    */
-   p{
-    column-count: 4;
-    color: var(--main-color);
-    text-align: justify;
-    column-rule: 3px solid black;
-    column-gap: 50px;
-   }
+p {
+  column-count: 4;
+  color: var(--main-color);
+  text-align: justify;
+  column-rule: 3px solid black;
+  column-gap: 50px;
+}
 
-
-   /* CSS variables✅ 
-     :start with --
+/* CSS variables✅ 
+     :start with --c
    */
 
-   :root{
-    --main-color:rgb(68, 209, 138);
-    --heading-color:rgb(19, 8, 221);
-   }
-   h1{
-    color: var(--heading-color);
-   }
+:root {
+  --main-color: rgb(68, 209, 138);
+  --heading-color: rgb(19, 8, 221);
+}
+h1 {
+  color: var(--heading-color);
+}
 
-   /* *CSS SPECIFICITY✅ 
+/* *CSS SPECIFICITY✅ 
     Highest specificity means highest priority
     And the highest priority is the !important
     !Level of specificity:(Highest to lowest)
     *1(!important):1(inline):1(id):1(class/pseudo-class/data-attributes):1(element/pseudo-element)
    */
 
-   /* New Features✅
+/* New Features✅
      1. border-inline
      2. border-block
-     3. nesting
+     3. nesting : & use
      4. writing-mode
+     5. pseudo class -> 
+     * :has() -> does this particular parent has this attributes?
+     * :is() -> either parent or children are same & use is() on those which are different
+     * :where() -> same as is() but it's specificity is zero
+     * :not() ? leave this & apply to others , not bhitra hunelai apply hudaina
     */
+/* :not() example
+    ul :not(li:first-child){
+      padding:20px;
+    } This code provides padding to all the childs but not first-child.
+      */
+/*! :is() & :where() example
+    .grid h1 p,
+    .container h2 p
+    .sub-container h3 p
+    
+    Above code can be written in a simple manner with is() & where()
+
+    :is(.grid, .container, .sub-container) :is(h1,h2,h3) p{
+      color:red;
+    }
+    :where(.grid, .container, .sub-container) :where(h1,h2,h3) p{
+      color:red;
+    }
+    */
+/* *:has() example
+        .parent:has([class="container"]:checked) p{
+           color:red;
+    } 
+    */
+
+/* *NEw: ACCENT COLOR ✅ */
+
+input[type="checkbox"] {
+  accent-color: red;
+  width: 50px;
+  aspect-ratio: 1;
+}
