@@ -229,7 +229,7 @@ li{
   border: 1px solid red;
 } */
 
-/* Anchor state✅ 
+/** Anchor state✅ 
   1.link
   2.Hover
   3.visited
@@ -254,7 +254,7 @@ a:active{
   color: green;
 } */
 
-/* Combinator ✅
+/** Combinator ✅
   1. Descendent  selector
   2. Ajacent sibling
   3. Child selector
@@ -273,7 +273,7 @@ a:active{
   color: green;
 } */
 
-/* DISPLAY IN CSS✅ 
+/** DISPLAY IN CSS✅ 
   1. Block level : no side by side content,take full width e.g <p> ,<h1>
   2. Inline : property like height , width cann't be used,only work for horizontal value
   3. Inline-block : to make inline element able to use block element property
@@ -291,7 +291,7 @@ a{
   display: inline;
 } */
 
-/* Overflow in css ✅
+/* *Overflow in css ✅
    1.overflow:visible
    2.overflow:hidden
    3.overflow:auto | USE THIS
@@ -317,16 +317,48 @@ a{
   */
 
   /*  PSEUDO CLASS✅
-    1. ;first-child
+    1. :first-child
     2. :last-child
     3. :nth-child()
     4. :first-of-type()
    */
 
-   /* COLUMN LAYOUT ✅*/
+   /* COLUMN LAYOUT ✅
+   1. cloumn-count
+   2. column-rule
+   3.column-gap
+   */
    p{
     column-count: 4;
+    color: var(--main-color);
     text-align: justify;
     column-rule: 3px solid black;
     column-gap: 50px;
    }
+
+
+   /* CSS variables✅ 
+     :start with --
+   */
+
+   :root{
+    --main-color:rgb(68, 209, 138);
+    --heading-color:rgb(19, 8, 221);
+   }
+   h1{
+    color: var(--heading-color);
+   }
+
+   /* *CSS SPECIFICITY✅ 
+    Highest specificity means highest priority
+    And the highest priority is the !important
+    !Level of specificity:(Highest to lowest)
+    *1(!important):1(inline):1(id):1(class/pseudo-class/data-attributes):1(element/pseudo-element)
+   */
+
+   /* New Features✅
+     1. border-inline
+     2. border-block
+     3. nesting
+     4. writing-mode
+    */

@@ -1,0 +1,31 @@
+ /* CSS SPECIFICITY✅ 
+    *Highest specificity means highest priority
+    And the highest priority is the !important
+    !Level of specificity:(Highest to lowest)
+    *1(!important):1(inline):1(id):1(class/pseudo-class/data-attributes):1(element/pseudo-element)
+*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 50%;
+}
+button{
+    width: 20px;
+}
+.para{
+    column-count: 4;
+    text-align: justify;
+}
