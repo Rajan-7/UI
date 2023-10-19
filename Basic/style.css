@@ -395,3 +395,11 @@ input[type="checkbox"] {
   width: 50px;
   aspect-ratio: 1;
 }
+
+/* ? container query
+   1. container-type
+   2. container-name
+   @container name {
+    properties 
+  }
+ */
