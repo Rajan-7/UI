@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carasaul</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: hsl(0, 0%, 77%);
+        align-items: center;
+      }
+
+      .img-container {
+        width: 60vw;
+        height: 50rem;
+        border-radius: 1rem;
+        background-image: url("../../images/sunrise.jpeg");
+        background-size: cover;
+
+        animation: senery 20s linear;
+      }
+      @keyframes senery {
+        0% {
+          background-image: url("../../images/pirateking.png");
+        }
+        20% {
+          background-image: url("../../images/naruto-uzumaki.webp");
+        }
+        40% {
+          background-image: url("../../images/mario-bg.jpg");
+        }
+        60% {
+          background-image: url("../../images/son-goku.jpeg");
+        }
+        80% {
+          background-image: url("../../images/parallax.jpeg");
+        }
+        100% {
+          background-image: url("../../images/sunset.webp");
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img-container"></div>
+  </body>
+</html>
