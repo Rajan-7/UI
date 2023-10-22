@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&family=Poppins:wght@100&family=Rubik:wght@400;500;700&family=Urbanist:wght@400;500&display=swap");
+
+/* Base rule */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist";
+}
+html {
+  font-size: 62.5%;
+  /* 1 rem = 10px */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins";
+}
+
+p,
+li,
+a {
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-align: right;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/* theme */
+
+:root {
+  --main-color: #0062ff;
+  --supporting-color: #ebf3fe;
+  --font-color: #424242;
+  --bg-color: #ffffff;
+  --heading-color: #000a19;
+  --para-color: #504e4d;
+}
+
+/* Layout */
+.container {
+  max-width: 128rem;
+  padding: 0.5rem 0;
+  margin: 0 auto;
+}
+
+/* nav-bar section */
+
+.nav-section {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+/* module/resuable */
+
+/* states */
+
+.nav-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .nav-bar ul {
+  display: flex;
+  gap: 2.2rem;
+
+  /* & li a {
+    font-size: 1.6rem;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -0.3rem;
+      left: 0;
+      width: 0%;
+      border-bottom: 2px solid var(--main-color);
+      transition: width 0.3s linear;
+      -webkit-transition: width 0.3s linear;
+      -moz-transition: width 0.3s linear;
+      -ms-transition: width 0.3s linear;
+      -o-transition: width 0.3s linear;
+    }
+  }
+  & li a:hover::after {
+    width: 100%;
+  } */
+} 
+
+.container .nav-bar ul li a{
+  font-size: 1.6rem;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+}
+
+.container .nav-bar ul li a::after{
+  content: "";
+      position: absolute;
+      bottom: -0.3rem;
+      left: 0;
+      width: 0%;
+      border-bottom: 2px solid var(--main-color);
+      transition: width 0.3s linear;
+      -webkit-transition: width 0.3s linear;
+      -moz-transition: width 0.3s linear;
+      -ms-transition: width 0.3s linear;
+      -o-transition: width 0.3s linear;
+}
+
+.container .nav-bar ul li a:hover::after{
+  width: 100%;
+}
+
+
+
+
+
