@@ -83,6 +83,14 @@ li {
 
 /* module/resuable */
 
+.common-section-heading{
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.common-section-subheading{
+  color: var(--heading-color);
+}
 /* states */
 
 .btn:hover {
