@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&family=Poppins:wght@100&family=Rubik:wght@400;500;700&family=Urbanist:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@400;500;700&family=Urbanist:wght@400;500;600;700;800;900&display=swap");
 
 /* Base rule */
 * {
@@ -27,8 +27,8 @@ a {
   font-family: "Poppins";
   font-size: 1.8rem;
   font-weight: 400;
+  line-height: 1.5;
   letter-spacing: 0.1rem;
-  text-align: right;
 }
 a {
   text-decoration: none;
@@ -45,6 +45,11 @@ li {
   --font-color: #424242;
   --bg-color: #ffffff;
   --heading-color: #000a19;
+  --main-heading-color: #003b99;
+  --white-color: #ffffff;
+  --test: #070101;
+  --btn-hover-bg-color: #003b99;
+  --btn-box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
   --para-color: #504e4d;
 }
 
@@ -53,6 +58,35 @@ li {
   max-width: 128rem;
   padding: 0.5rem 0;
   margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-two--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.2rem;
+  background-color: var(--main-color);
+  box-shadow: var(--btn-box-shadow);
+  color: var(--white-color);
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+}
+
+/* module/resuable */
+
+/* states */
+
+.btn:hover {
+  background-color: var(--btn-hover-bg-color);
 }
 
 /* nav-bar section */
@@ -68,10 +102,6 @@ li {
   align-items: center;
 }
 
-/* module/resuable */
-
-/* states */
-
 .nav-section .container {
   display: flex;
   justify-content: space-between;
@@ -81,13 +111,16 @@ li {
 .container .nav-bar ul {
   display: flex;
   gap: 2.2rem;
+  position: relative;
 
-  /* & li a {
+  & li a {
     font-size: 1.6rem;
+    font-weight: 800;
     color: var(--heading-color);
     text-transform: uppercase;
-    font-weight: 700;
     display: inline-block;
+    font-weight: 400;
+    cursor: pointer;
     position: relative;
 
     &::after {
@@ -106,37 +139,81 @@ li {
   }
   & li a:hover::after {
     width: 100%;
-  } */
-} 
+  }
+}
 
-.container .nav-bar ul li a{
-  font-size: 1.6rem;
-    color: var(--heading-color);
+/* nav-bar section end */
+
+/* main section */
+main {
+  position: relative;
+  background-image: linear-gradient(
+    to right top,
+    #7a6bd1,
+    #7a75d6,
+    #7b80db,
+    #7d89df,
+    #8093e3,
+    #7f97e6,
+    #7f9ae9,
+    #7e9eec,
+    #779df0,
+    #709bf3,
+    #689af7,
+    #5f99fb
+  );
+}
+
+/* shape divider css */
+.custom-shape-divider-bottom-1698039704 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1698039704 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 65px;
+}
+
+.custom-shape-divider-bottom-1698039704 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.main-section .grid{
+   align-items: center;
+   gap:5.4rem;
+
+   & .sub-heading{
     text-transform: uppercase;
     font-weight: 700;
-    display: inline-block;
-    position: relative;
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    color: var(--main-heading-color);
+   }
+
+   & .main-heading{
+    font-size: 4.4rem;
+    text-transform: uppercase;
+    color: var(--main-heading-color);
+    font-weight: 900;
+   }
+
+   & .main-para{
+    color: var(--white-color);
+    margin: 1.7rem 0 2.2rem 0;
+   }
 }
 
-.container .nav-bar ul li a::after{
-  content: "";
-      position: absolute;
-      bottom: -0.3rem;
-      left: 0;
-      width: 0%;
-      border-bottom: 2px solid var(--main-color);
-      transition: width 0.3s linear;
-      -webkit-transition: width 0.3s linear;
-      -moz-transition: width 0.3s linear;
-      -ms-transition: width 0.3s linear;
-      -o-transition: width 0.3s linear;
-}
-
-.container .nav-bar ul li a:hover::after{
+.main-section .section-image img{
   width: 100%;
+  height: auto;
 }
 
-
-
-
-
+/* main section end */
