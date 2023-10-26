@@ -90,6 +90,14 @@ li {
 
 /* module/resuable */
 
+section .container{
+  margin-top: 7rem;
+}
+
+section{
+  margin-bottom: 7rem;
+}
+
 .fa-solid {
   padding: 2.4rem;
   font-size: 2rem;
@@ -346,3 +354,30 @@ main {
 }
 
 /* course section end */
+
+/* why choose section start */
+.choose-section .text-align-right .why-choose--div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    text-align: right;
+}
+
+
+.common-text-highlight{
+  width: 5rem;
+  aspect-ratio: 1;
+  background-color: var(--supporting-color);
+  font-weight: 700;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* why choose section end */
+
