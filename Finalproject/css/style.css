@@ -68,6 +68,13 @@ li {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-three--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
 .btn {
   display: inline-block;
   padding: 1rem 1.2rem;
@@ -83,13 +90,31 @@ li {
 
 /* module/resuable */
 
-.common-section-heading{
-  font-size: 3.2rem;
+.fa-solid {
+  padding: 2.4rem;
+  font-size: 2rem;
+  background-color: var(--supporting-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: var(--main-heading-color);
+}
+
+.common-section-heading {
+  font-size: 2.4rem;
   font-weight: 700;
   text-transform: uppercase;
 }
-.common-section-subheading{
+
+.common-section-subheading {
   color: var(--heading-color);
+}
+
+.common-section--title {
+  font-size: 1.6rem;
+  margin: 1.4rem 0 0.7rem 0;
 }
 /* states */
 
@@ -103,6 +128,10 @@ li {
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.nav-section .logo-section .brand-title {
+  font-size: 1.5rem;
 }
 
 .logo-section {
@@ -154,6 +183,7 @@ li {
 
 /* main section */
 main {
+  margin-bottom: 80px;
   position: relative;
   background-image: linear-gradient(
     to right top,
@@ -187,41 +217,132 @@ main {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 65px;
+  height: 90px;
 }
 
 .custom-shape-divider-bottom-1698039704 .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
-.main-section .grid{
-   align-items: center;
-   gap:5.4rem;
+.main-section .grid {
+  align-items: center;
+  gap: 5.4rem;
 
-   & .sub-heading{
+  & .sub-heading {
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     font-size: 1.5rem;
     color: var(--main-heading-color);
-   }
+  }
 
-   & .main-heading{
+  & .main-heading {
     font-size: 4.4rem;
     text-transform: uppercase;
     color: var(--main-heading-color);
     font-weight: 900;
-   }
+  }
 
-   & .main-para{
+  & .main-para {
     color: var(--white-color);
     margin: 1.7rem 0 2.2rem 0;
-   }
+  }
 }
 
-.main-section .section-image img{
+.main-section .section-image img {
   width: 100%;
   height: auto;
 }
 
 /* main section end */
+
+/* about section start */
+
+.about-section .grid {
+  gap: 5.4rem;
+}
+.about-section .about-div {
+  text-align: center;
+}
+
+.about-section .container {
+  margin-top: 7rem;
+}
+.about-section {
+  margin-bottom: 7rem;
+}
+.about-section img {
+  padding: 2.4rem;
+  width: 120px;
+  height: auto;
+  background-color: var(--supporting-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.icon:hover > img {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  background: linear-gradient(to right, #0575e6, #021b79);
+}
+/* about section end */
+
+/* course section start */
+
+.course-section .container {
+  margin-bottom: 7rem;
+}
+
+.course-section .grid {
+  gap: 3.2rem;
+}
+
+.course-section .course-div {
+  padding: 3.2rem;
+}
+
+.course-section .course-div:hover {
+  box-shadow: var(--btn-box-shadow);
+}
+
+.course-div:nth-child(1) .icon .fa-solid {
+  color: #687eff;
+  background-color: #b6fffa;
+}
+.course-div:nth-child(2) .icon .fa-solid {
+  color: #68bf9b;
+  background-color: #e7f6e5;
+}
+.course-div:nth-child(3) .icon .fa-solid {
+  color: #89cff3;
+  background-color: #cdf5fd;
+}
+.course-div:nth-child(4) .icon .fa-solid {
+  color: #ff8080;
+  background-color: #b5cb99;
+}
+.course-div:nth-child(5) .icon .fa-solid {
+  color: #d988b9;
+  background-color: rgb(247, 223, 238);
+}
+.course-div:nth-child(6) .icon .fa-solid {
+  color: #ff9b50;
+  background-color: #f6dfce;
+}
+.course-div:nth-child(7) .icon .fa-solid {
+  color: #1450a3;
+  background-color: #dce9fa;
+}
+
+/* course section end */
