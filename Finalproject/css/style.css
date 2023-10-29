@@ -23,7 +23,8 @@ h6 {
 
 p,
 li,
-a {
+a,
+label {
   font-family: "Poppins";
   font-size: 1.8rem;
   font-weight: 400;
@@ -61,10 +62,17 @@ li {
   margin: 0 auto;
 }
 
-.about-section .container:first-child,
-.course-section .container:first-child,
-.choose-section .container:first-child,
-.contact-section .container:first-child {
+
+
+:is(
+    .about-section,
+    .course-section,
+    .choose-section,
+    .contact-section,
+    .section-contact,
+    .blog-section
+  )
+  .container:first-child {
   padding: 5rem 0 2rem 0;
 }
 
@@ -131,6 +139,12 @@ li {
 }
 
 /* nav-bar section */
+
+.nav-section .container .brand-title a{
+  font-size: 1.4rem;
+  letter-spacing: 0rem;
+  color: var(--heading-color);
+}
 
 .nav-section {
   width: 100%;
@@ -470,6 +484,90 @@ figure {
 }
 /* why choose section end */
 
+/* blog section start */
+
+.blog-section {
+  background-color: var(--bg-color);
+
+  & .grid {
+    gap: 5.4rem;
+  }
+
+  & .blog-div {
+    box-shadow: var(--btn-box-shadow);
+    transition: scale 0.3s linear;
+    -webkit-transition: scale 0.3s linear;
+    -moz-transition: scale 0.3s linear;
+    -ms-transition: scale 0.3s linear;
+    -o-transition: scale 0.3s linear;
+
+    &:hover {
+      scale: 1.1;
+    }
+    & .blog-content {
+      padding: 1.4rem 2.4rem 2.4rem;
+    }
+  }
+
+  & img {
+    width: 100%;
+    height: 20rem;
+  }
+
+  & .blog-date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+
+    & .fa-solid {
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+}
+
+/* blog section end */
+
+/* actual contact page section start */
+
+.section-contact{
+  & .grid{
+    gap:5.5rem;
+    align-items: center;
+  }
+}
+
+.mb-3 {
+  margin-bottom: 2.2rem;
+}
+
+.contact-content .grid {
+  gap: 5.5rem;
+}
+
+label {
+  display: block;
+  font-size: 1.8rem;
+}
+input,
+textarea {
+  width: 100%;
+  font-size: 1.7rem;
+  padding: 1rem 2.4rem;
+  letter-spacing: 0.1rem;
+}
+::placeholder {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+.btn-submit {
+  font-size: 1.6rem;
+  border: none;
+  text-transform: uppercase;
+}
+/* actual contact page section end */
+
 /* contact section start */
 .contact-section {
   width: 60%;
@@ -539,7 +637,7 @@ footer * {
   margin: 0.5rem 0 2rem 0;
 }
 
-footer .grid{
+footer .grid {
   text-align: center;
 }
 
@@ -577,27 +675,3 @@ footer .grid{
 }
 
 /* footer section start */
-
-/* blog section start */
-
-.blog-section .grid{
-  gap:2.4rem;
-}
-
-.blog-div img{
-  width: 31rem;
-  height: 20rem;
-}
-
-.blog-div .blog-content .blog-date{
-  display: flex;
-  justify-content: space-between;
-}
-
-.blog-date .fa-solid{
-  padding: 0;
-  color: var(--test);
-  background-color: var(--white-color);
-}
-/* blog section end */
-
