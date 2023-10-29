@@ -51,6 +51,7 @@ li {
   --btn-hover-bg-color: #003b99;
   --btn-box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
   --para-color: #504e4d;
+  --footer-bg-color: #040d12;
 }
 
 /* Layout */
@@ -96,11 +97,6 @@ li {
 }
 
 /* module/resuable */
-
-/* section .container {
-  margin-top: 7rem;
-} */
-
 
 .fa-solid {
   padding: 2.4rem;
@@ -270,6 +266,10 @@ main {
 /* main section end */
 
 /* about section start */
+.about-div .icon img {
+  width: 4rem;
+  height: auto;
+}
 
 .about-section .grid {
   gap: 5.4rem;
@@ -313,7 +313,7 @@ main {
 
 /* course section start */
 
-.course-section{
+.course-section {
   background-color: var(--bg-color);
 }
 
@@ -484,9 +484,13 @@ figure {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
   padding: 0 3rem;
+  position: relative;
+  bottom: -15rem;
+  z-index: 1;
+  background-color: var(--white-color);
   &.grid {
     align-items: center;
-    gap:5.5rem
+    gap: 5.5rem;
   }
 }
 
@@ -499,11 +503,11 @@ figure {
   margin: 1rem 0 2rem 0;
 }
 
-.contact-section a{
+.contact-section a {
   color: var(--white-color);
 }
 
-.contact-section .fa-solid{
+.contact-section .fa-solid {
   padding: 0;
   color: var(--white-color);
   background-color: var(--main-color);
@@ -514,3 +518,86 @@ figure {
   height: auto;
 }
 /* contact section end */
+
+/* footer section start */
+
+footer {
+  background-color: var(--footer-bg-color);
+  padding-top: 15rem;
+}
+
+footer * {
+  color: var(--white-color);
+}
+
+.footer-subheading {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.footer-1 p {
+  margin: 0.5rem 0 2rem 0;
+}
+
+footer .grid{
+  text-align: center;
+}
+
+.footer-1 {
+  text-align: left;
+  & .footer-icon {
+    display: flex;
+    gap: 1.8rem;
+    & .fa-brands {
+      width: 3rem;
+      aspect-ratio: 1;
+      background-color: var(--supporting-color);
+      color: var(--btn-hover-bg-color);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+
+      &:hover {
+        background-color: var(--main-color);
+        color: var(--supporting-color);
+        rotate: 360deg;
+      }
+    }
+  }
+}
+
+/* footer section start */
+
+/* blog section start */
+
+.blog-section .grid{
+  gap:2.4rem;
+}
+
+.blog-div img{
+  width: 31rem;
+  height: 20rem;
+}
+
+.blog-div .blog-content .blog-date{
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-date .fa-solid{
+  padding: 0;
+  color: var(--test);
+  background-color: var(--white-color);
+}
+/* blog section end */
+
