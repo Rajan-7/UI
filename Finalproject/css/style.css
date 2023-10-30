@@ -62,8 +62,6 @@ li {
   margin: 0 auto;
 }
 
-
-
 :is(
     .about-section,
     .course-section,
@@ -73,7 +71,7 @@ li {
     .blog-section
   )
   .container:first-child {
-  padding: 5rem 0 2rem 0;
+  padding: 5rem 2.4rem 2rem 2.4rem;
 }
 
 .grid {
@@ -140,9 +138,8 @@ li {
 
 /* nav-bar section */
 
-.nav-section .container .brand-title a{
+.nav-section .container .brand-title a {
   font-size: 1.4rem;
-  letter-spacing: 0rem;
   color: var(--heading-color);
 }
 
@@ -165,7 +162,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0;
+  padding: 1.5rem 2.4rem;
 }
 
 .container .nav-bar ul {
@@ -206,6 +203,7 @@ li {
 
 /* main section */
 main {
+  /* width:100%; */
   margin-bottom: 80px;
   position: relative;
   background-image: linear-gradient(
@@ -240,7 +238,7 @@ main {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 130px;
+  height: 120px;
 }
 
 .custom-shape-divider-bottom-1698039704 .shape-fill {
@@ -380,7 +378,7 @@ main {
 
 /* why choose section start */
 .choose-section .grid {
-  gap: 4.5rem;
+  gap: 5.5rem;
 }
 
 .why-choose--div {
@@ -530,9 +528,9 @@ figure {
 
 /* actual contact page section start */
 
-.section-contact{
-  & .grid{
-    gap:5.5rem;
+.section-contact {
+  & .grid {
+    gap: 5.5rem;
     align-items: center;
   }
 }
@@ -565,6 +563,11 @@ textarea {
   font-size: 1.6rem;
   border: none;
   text-transform: uppercase;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 0.1rem solid var(--btn-hover-bg-color);
 }
 /* actual contact page section end */
 
@@ -629,8 +632,12 @@ footer * {
 }
 
 .footer-subheading {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
+}
+
+:is(.footer-2, .footer-3, .footer-4) a {
+  font-size: 1.5rem;
 }
 
 .footer-1 p {
@@ -675,3 +682,170 @@ footer .grid {
 }
 
 /* footer section start */
+
+/* scroll-bar -> width,track,thumb */
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background-color: var(--supporting-color);
+}
+
+/* thumb */
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--heading-color);
+}
+
+/* ? scroll animation & animation snap */
+
+/* media queries */
+
+@media (width <= 1400px) {
+  html {
+    font-size: 56.25%;
+    /* 1 rem = 9.5px */
+  }
+
+  .main-section img {
+    width: 90%;
+  }
+}
+
+@media (width <= 1220px) {
+  html {
+    font-size: 54%;
+    /* 1 rem = 9px */
+  }
+
+  :is(
+      .about-section,
+      .course-section,
+      .choose-section,
+      .contact-section,
+      .blog-section
+    )
+    .grid {
+    gap: 5.4rem;
+  }
+}
+
+@media (width <= 1100px) {
+  .course-section .grid-four--cols {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .left-content {
+    order: 2;
+  }
+
+  .right-content {
+    order: 3;
+  }
+
+  .choose-center--div {
+    order: 1;
+    & figure::before,
+    figure::after {
+      padding: 0;
+      width: 0;
+      height: 0;
+      background-color: transparent;
+    }
+  }
+}
+
+@media (width <= 998px) {
+  .main-section {
+    height: auto;
+    padding-bottom: 5rem;
+    & .grid-two--cols {
+      grid-template-columns: 1fr;
+
+      & .section-content {
+        order: 2;
+      }
+
+      & .section-image {
+        order: 1;
+        width: 70%;
+      }
+    }
+  }
+  .about-section .about-div {
+    text-align: left;
+  }
+
+  footer .grid-four--cols {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    text-align: left;
+
+    & .footer-1 {
+      grid-row: 2/3;
+      grid-column: 1/-1;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@media (width <= 768px) {
+  .grid-two--cols,
+  .grid-three--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-section {
+    & .container {
+      display: flex;
+      flex-direction: column;
+
+      & .logo-section {
+        margin-bottom: 0.1rem;
+      }
+
+      & .nav-bar ul {
+        gap: 1.2rem;
+      }
+    }
+  }
+
+  .choose-section {
+    & img {
+      width: 40%;
+    }
+
+    & .grid{
+      gap:1.4rem;
+    }
+
+    & .text-align-right .why-choose--div {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      text-align: left;
+    }
+  }
+  .custom-shape-divider-bottom-1698039704 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+  }
+
+  .main-section .grid .main-heading {
+    font-size: 3.6rem;
+  }
+}
