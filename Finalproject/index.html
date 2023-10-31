@@ -3,6 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Believe in yourself and your abilities, for with determination and
+    hard work, you can achieve anything you set your mind to. Embrace
+    challenges as opportunities to grow and never give up on your
+    dreams, because the journey to success is filled with learning and
+    resilience."
+    />
+    <meta name="keyword" content="css,projects,html" />
+    <meta name="Robots" content="index follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&family=Poppins:wght@100&family=Rubik:wght@400;500;700&family=Urbanist:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -10,6 +26,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Royal</title>
   </head>
@@ -17,13 +34,13 @@
     <!-- start navbar -->
     <header class="nav-section">
       <div class="container">
-        <div class="logo-section">
+        <div class="logo-section" >
           <a href="index.html">
             <img
               src="./images/logg.png"
               alt="my logo"
-              width="80px"
-              height="100px"
+              width="50px"
+              height="60px"
             />
           </a>
           <div class="brand-title"><a href="index.html">Royal</a></div>
@@ -67,7 +84,7 @@
             <a href="/" class="btn btn-white">Chase with us</a>
           </div>
         </div>
-        <div class="section-image">
+        <div class="section-image" data-aos="fade-up">
           <figure>
             <img src="./images/Chasing The Dream.png" alt="boy chasing dream" />
           </figure>
@@ -109,7 +126,7 @@
         </p>
       </div>
       <div class="container grid grid-three--cols">
-        <div class="about-div">
+        <div class="about-div" data-aos="fade-up">
           <div class="icon">
             <img src="./images/Keyword Research.png" alt="reaearch logo" />
           </div>
@@ -119,7 +136,7 @@
             start by learning what you need.
           </p>
         </div>
-        <div class="about-div">
+        <div class="about-div" data-aos="fade-up"  data-aos-delay="300">
           <div class="icon">
             <img src="./images/Typography Design.png" alt="design logo" />
           </div>
@@ -129,7 +146,7 @@
             sure it helps you in designing.
           </p>
         </div>
-        <div class="about-div">
+        <div class="about-div" data-aos="fade-up"  data-aos-delay="600">
           <div class="icon">
             <img src="./images/Coding.png" alt="devlopment logo" />
           </div>
@@ -371,4 +388,8 @@
     </footer>
     <!-- footer section end -->
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

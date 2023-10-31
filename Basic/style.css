@@ -409,3 +409,27 @@ input[type="checkbox"] {
 */
 
 /* ? SMACSS (scalable & modular architecture for css) */
+
+/* SEO CSS -> search engine optimization
+  1.Meta title tag
+  2.Meta description tag
+  3.Meta keyword tag
+  4.Meta Robots tag
+*/
+
+/*? Website testing ✅
+  1.LightHouse Testing
+  2.https://pagespeed.web.dev/
+  3.https://gtmatrix.com/
+*/
+
+/* CSS performance✅
+  1. CSS minification & compression
+  2. Critical css:Above the fold content
+  3. Reducing render blocking
+ */
+
+ /* !HOSTING WEBSITE LIVE✅ 
+   1. netlify
+   2. hostinger
+ */
