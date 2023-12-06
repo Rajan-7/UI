@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        height: 280px;
+        width: 300px;
+        padding: 0;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .card img {
+        margin: 0;
+        height: 224px;
+        width: 300px;
+        object-fit: cover;
+        display: block;
+      }
+      .card h3 {
+        margin: 0;
+        padding: 12px 12px 48px;
+        line-height: 32px;
+        font-weight: 500;
+        font-size: 20px;
+        position: relative;
+      }
+      .card .focus-content {
+        display: block;
+        padding: 8px 12px;
+      }
+      .card p {
+        position: absolute;
+        margin: 0;
+        line-height: 1.5;
+        display: none;
+      }
+
+      .card:hover h3 {
+        margin-top: -100px;
+      }
+
+      .card:hover p,
+      .card:focus-within p {
+        padding: 8px 12px 0;
+        margin-top: -60px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="../../../Finalproject/images/blogImage1.jpeg" alt="" />
+      <h3>Hover Me</h3>
+      <div class="focus-content">
+        <p>
+          A paragraph is a series of sentences that are organized and coherent,
+          and are all related to a single topic.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
