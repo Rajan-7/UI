@@ -7,7 +7,7 @@ html {
   font-size: 62.5%;
 }
 
-.container {
+#container {
   cursor: pointer;
   height: 100vh;
   display: flex;
@@ -39,8 +39,8 @@ html {
 }
 
 .drop-down--service a {
-  display: block;
-  text-align: center;
+  /* display: block;
+  text-align: center; */
   text-decoration: none;
   color: #000;
 }
