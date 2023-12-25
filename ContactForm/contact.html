@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="post">
+      <div class="grid grid-two-section mb-3">
+        <div class="name">
+          <label for="username">Your name</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            autocomplete="off"
+            required
+            placeholder=""
+          />
+        </div>
+        <div class="email">
+            <label for="email">Your Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              autocomplete="off"
+              required
+              placeholder=""
+            />
+          </div>
+      </div>
+      <div class="mb-3">
+        <label for=""></label>
+      </div>
+    </form>
+  </body>
+</html>

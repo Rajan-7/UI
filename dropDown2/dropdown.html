@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .display-product{
+            display: inline-block;
+            position: relative;
+        }
+        .drop-down--product{
+            display: none;
+            position: absolute;
+        }
+        .display-product:hover .drop-down--product{
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="home">Home</div>
+      <div class="Hover-effectors">
+        <div class="display-product">
+          <div class="display-name">Product</div>
+          <div class="drop-down--product">
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+          </div>
+        </div>
+      </div>
+      <div class="logout">Logout</div>
+    </div>
+  </body>
+</html>
