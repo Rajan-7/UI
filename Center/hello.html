@@ -19,6 +19,15 @@
         }
         p{
             color:Red;
+            transition: width;
+            border:2px solid blue;
+            transition: width 2s;
+        }
+        p:hover{
+            width: 400px;
+        }
+        p::after{
+            content: "Hello";
         }
     </style>
 </head>
