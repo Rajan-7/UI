@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #a1c3ff;
+}
+
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 16.7px;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2 {
+  margin-bottom: 15px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* navbar */
+.navbar {
+  height: 60px;
+  background: #3474e6;
+  color: #fff;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: lightblue;
+}
+
+.menu {
+  display: none;
+}
+
+.navbar .container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin-left: 25px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+/* Header */
+.header {
+  background-color: #0151cc;
+  color: #fff;
+  min-height: 500px;
+}
+
+.header h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.header p {
+  width: 77%;
+}
+
+.header img {
+  height: 400px;
+}
+
+/* Boxes */
+.boxes .container {
+    display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  flex: 1;
+  background-color: #0a51cc;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 20px 10px;
+  padding: 15px 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 6px 15px 15px;
+  color: #fff;
+}
+
+/* Padding */
+.px-1 {
+  padding: 0 1rem;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 3rem 0;
+}
+
+.py-3 {
+  padding: 4.5rem 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .header .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  .menu i{
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .header p{
+    width: 100%;
+  }
+
+  .header img{
+    padding-top: 20px;
+  }
+
+  .boxes .container{
+    display: block;
+    text-align: center;
+  }
+}
